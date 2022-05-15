@@ -1,3 +1,2 @@
 # Stock-of-Photos-and-Templates-
-* This is an understanding note that consits of tag, block of codes, scripts etc..
-* 
+* This is a project walkthrough note that consits of tags, block of codes, scripts etc..
