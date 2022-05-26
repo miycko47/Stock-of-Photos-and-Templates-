@@ -1,5 +1,4 @@
-# Stock-of-Photos-and-Templates-
-* This is a project walkthrough note that consits of tags, block of codes, scripts etc..
+# This is a project walkthrough note that consits of tags, block of codes, scripts etc..
 - <div id = "loader-wrapper"> 
        loader wrapper is a preloader in css that comes seconds head before the page loads up.
 - <nav calss = "navbar navbar-expand-lg">
