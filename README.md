@@ -4,4 +4,4 @@
        loader wrapper is a preloader in css that comes seconds head before the page loads up.
 - <nav calss = "navbar navbar-expand-lg">
         navbar- makes it fluid / responsive in all types of resolution.
-- conatainer - fluid - provides a full - width container which spans the entire width of the viewport
+- container - fluid - provides a full - width container which spans the entire width of the viewport
