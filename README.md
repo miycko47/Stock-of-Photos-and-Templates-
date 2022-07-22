@@ -1,6 +1,12 @@
 # This is a project walkthrough note that consits of tags, block of codes, scripts etc..
-- <div id = "loader-wrapper"> 
-       loader wrapper is a preloader in css that comes seconds head before the page loads up.
-- <nav calss = "navbar navbar-expand-lg">
-        navbar- makes it fluid / responsive in all types of resolution.
-- container - fluid - provides a full - width container which spans the entire width of the viewport
+-def get_tag(self):
+        return self.kwargs.get('tag')
+
+    def get_queryset(self):
+        return self.model.objects.filter(tags__slug=self.get_tag())
+    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context["tag"] = self.get_tag()
+        return context
+        
