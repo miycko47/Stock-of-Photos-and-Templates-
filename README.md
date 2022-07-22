@@ -72,3 +72,29 @@ whether or not the user is the submitter of the photo.
 - The bootstrap.bundle.min.js file is loaded, which provides Bootstrap styling for the page.
 
  The page is finished.
+ 
+ 
+    <ul class="navbar-nav">
+         {% if user.is_authenticated %}
+        
+        <li class="nav-item">
+          <a class="nav-link active" href="{% url 'photo:create' %}">Add a photo</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Hi {{user.username}}</a>
+        </li>
+        {% else %}
+
+        <li class="nav-item">
+          <a href="{% url 'user:login' %}" class="btn btn-sm btn-danger"
+            >Sign In</a
+          >
+        </li>
+        {% endif %}
+      </ul>
+      
+ - The code checks if the user is authenticated. If so, it displays a list of links.
+
+ -  If the user is not authenticated, it displays a list of links as well, but with a different class.
+
+3-5) These lines create a list item with an active link to add a photo and a regular link to Hi {{user.username}}.
